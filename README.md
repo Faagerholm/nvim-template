@@ -10,6 +10,10 @@ NeoVim, or nvim, is a hight customisable editor based on the popular  vim editor
 Nvim has multiple ways of configuring, with one of the being packer. In the template we are using
 packer. Other big ways are with lazy.nvim and vim-plug.
 
+## Requirements
+- [Neovim](https://neovim.io/)
+- [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) is highly recommended, used by telescopes `find_files`, `live_grep` and `grep_string`.
+
 ## Recommendation
 
 To be effective with NeoVim, I'd recommend using it with other tools like tmux, but this is not a requirement.
