@@ -49,3 +49,14 @@ copy this folder (excluding README) to ~/.config/nvim
 start by exploring lua/faagerholm/plugins-setup.lua and lua/core files.
 
 _Start hacking, and rember, exit with :wq_
+
+## Navigation and commands
+
+As you probably know vim is based in {motions} //key combinations
+To get use to nvim, use nvim regulary, but not extensivly. You'll get familiar with the most basic commands quite fast,
+and learn the rest over time.
+
+Have a look at faagerholm/core/keymaps for a reference on what commands you have to your usage.
+Use google as a help, when you are starting out.
+
+Give it time, it can be overwhelming at first!
