@@ -18,22 +18,13 @@ mason.setup()
 
 mason_lspconfig.setup({
   ensure_installed = {
-    "dockerls",
-    "docker_compose_language_service",
     "eslint",
-    "golangci_lint_ls",
-    "gopls",
-    "jsonls",
-    "sqls",
-    "terraformls",
-    "tflint",
-    "yamlls",
+    "gopls"
   }
 })
 
 mason_null_ls.setup({
   ensure_installed = {
     "goimports",
-    "golangci_lint_ls",
   },
 })

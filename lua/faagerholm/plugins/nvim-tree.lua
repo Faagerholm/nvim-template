@@ -40,6 +40,11 @@ nvimtree.setup({
       },
     },
   },
+  update_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_cwd = false,
+  },
   diagnostics = {
     enable = true,
   },
@@ -50,8 +55,11 @@ nvimtree.setup({
   renderer = {
     highlight_git = true,
   },
+  filter = {
+    dotfiles = true,
+  },
   view = {
-    width = 40,
+    width = 45,
   },
   -- setup on_attach
   on_attach = on_attach,

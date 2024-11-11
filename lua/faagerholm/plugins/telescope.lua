@@ -88,8 +88,17 @@ telescope.setup({
         ["<esc>"] = actions.close,
       },
     },
-    file_ignore_patterns = { "node_modules" },
+    file_ignore_patterns = { "node_modules", ".git" },
   },
 })
 
 telescope.load_extension("fzf")
+
+
+local status, outline = pcall(require, "outline")
+if not status then
+  vim.notify("outline not found", vim.log.levels.ERROR)
+  return
+end
+
+outline.setup()

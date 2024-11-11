@@ -58,6 +58,21 @@ keymap.set("n", "<leader>bn", ":bnext<CR>") -- go to next buffer
 keymap.set("n", "<leader>bb", ":bprevious<CR>") -- go to previous buffer (backwards)
 keymap.set("n", "<leader>bd", ":bd<CR>") -- delete current buffer
 
--- REST-client, run on cursor
+-- debugging
+keymap.set("n", "<leader>dd", ":DapToggleBreakpoint<CR>") -- toggle breakpoint
+keymap.set("n", "<F5>", ":DapContinue<CR>") -- continue
+keymap.set("n", "<F1>", ":DapStepInto<CR>") -- step into
+keymap.set("n", "<F2>", ":DapStepOver<CR>") -- step over
+keymap.set("n", "<F3>", ":DapStepOut<CR>") -- step out
+keymap.set("n", "<F4>", ":DapTerminate<CR>") -- disconnect
+keymap.set("n", "<leader>du", ":DapUiToggle<CR>") -- toggle dap ui
+keymap.set("n", "<leader>dt", ":lua require'dap-go'.debug_test()<CR>") -- debug test
+keymap.set("n", "<leader>dl", ":lua require'dap-go'.debug_last_test()<CR>") -- debug last test
+keymap.set("n", "<leader>dr", ":lua require'dapui'.open({reset=true})<CR>", {noremap = true}) -- reset dap ui
+keymap.set("n", "<leader>dc", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>") -- set breakpoint condition
+keymap.set("n", "<leader>dp", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>") -- set log point
+
+-- misc 
 keymap.set("n", "<leader>rr", "<Plug>RestNvim") -- run REST request under cursor
+
 

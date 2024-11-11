@@ -5,13 +5,14 @@ opt.relativenumber = true
 opt.number = true
 
 -- Ruler
-opt.colorcolumn = "80"
+opt.colorcolumn = "100"
 
 -- tabs & identiation
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 opt.smartindent = true
+
 
 -- line wrapping
 opt.wrap = false
@@ -23,6 +24,7 @@ opt.smartcase = true
 
 -- curosor line
 opt.cursorline = true
+
 
 -- appearance
 opt.termguicolors = true
